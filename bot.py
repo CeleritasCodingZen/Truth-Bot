@@ -12,7 +12,7 @@ with open("truth.txt") as file:
 
 bot = commands.Bot(command_prefix="!")
 
-@bot.slash_command(description="Display a Truth Question", guild_ids=[1142411912819245147])
+@bot.slash_command(description="Display a Truth Question", guild_ids=[your guild id])
 async def truth(ctx):
     if not truth_questions:
         await ctx.send("There are no truth questions available.")
